@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{margin:0;background:#111;color:white;text-align:center;font-family:Arial}
+.slide{display:none;height:90vh;align-items:center;justify-content:center}
+.active{display:flex;animation:go .6s}
+.card{padding:30px;background:#222;border-radius:20px;
+box-shadow:0 0 25px #ff69b4}
+h1{color:#ff69b4}
+button{padding:10px 25px;border:0;border-radius:20px;background:#ff69b4;color:white}
+@keyframes go{from{transform:translateX(100px);opacity:0}to{transform:translateX(0);opacity:1}}
+</style>
+</head>
+
+<body>
+
+<div class="slide active">
+<div class="card">
+<h1>😂 RITESH 😂</h1>
+<p> NASERI NO. 1🤪</p>
+<p> 🥰</p>
+</div></div>
+
+<div class="slide">
+<div class="card">
+<h1>☕ Reel me daru dekhane ke bad </h1>
+<p>Main : " mat pijiyega - !" 😂</p>
+<p>Ritesh bhai: January me hi chhor diye? 😭"</p>
+</div></div>
+
+<div class="slide">
+<div class="card">
+<h1>❤️ Final Truth</h1>
+<p>Acche hain but .. abhi naseri ban gaye hai 😎</p>
+</div></div>
+
+<button onclick="next()">NEXT ➡️</button>
+
+<script>
+let n=0,s=document.querySelectorAll(".slide");
+function next(){
+s[n].classList.remove("active");
+n=(n+1)%s.length;
+s[n].classList.add("active");
+}
+</script>
+
+</body>
+</html>

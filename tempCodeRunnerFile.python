@@ -1,0 +1,46 @@
+# define in function of Hello
+
+def hello(name = "Student"):
+    print("Hello ",name)
+
+hello("Ravi")
+hello()
+
+# questions :- write functions to print all the element this of a given list l = [10,20,30,40,50]
+li = [10,20,30,40,50]
+
+def pl(l):
+    for i in range(len(l)):
+        print(l[i], end = " ")
+    print()
+
+pl(li)
+
+# use tuple functions
+
+x = [10,20,30,40,50]
+t = (1,2,3,4,5)
+
+pl(x)
+
+x.append(90)
+
+# write a function to print all the digits of a given number{n = 7369}.
+
+n = int(input())
+print()
+def dp():
+    while (n!=0):
+        ld = n % 10
+        print(ld)
+        n = n//10
+
+dp(n)
+
+# homeword questions write a function to check a number is 
+# 1> palindrome
+# 2> strong
+# 3> armstrong
+# 4> perfect
+
+
